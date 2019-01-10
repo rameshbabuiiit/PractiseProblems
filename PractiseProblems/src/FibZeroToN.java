@@ -2,15 +2,16 @@ import java.util.Scanner;
 
 /**
  * @author RAMESH POLUDASU
- * @description This piece of code prints fibonacci numbers less than given input n
+ * @description This piece of code prints first n(given input) fibonacci numbers 
  */
 public class FibZeroToN {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Provide fibonacci series end point#");
 		int n = sc.nextInt();
 		for (int i = 0; i < n; i++) {
-			System.out.println(fib(i));
+			System.out.print(fib(i) + " ");
 		}
 		sc.close();
 	}
